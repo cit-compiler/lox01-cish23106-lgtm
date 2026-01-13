@@ -127,6 +127,7 @@ class Scanner {
                 } else {
                     addToken(SLASH);
                 }
+                break;
             case ' ':
             case '\r':
             case '\t':
@@ -163,7 +164,6 @@ class Scanner {
             type = IDENTIFIER;
         addToken(type);
 
-        addToken(IDENTIFIER);
     }
 
     private void number() {
